@@ -55,3 +55,4 @@ Date of finished:
 
 5. Схема организации сервисов и контейнеров:
 
+![image](https://user-images.githubusercontent.com/107037214/208664994-fd0f126c-a8dc-4af3-aca4-69e18231e04b.png)
