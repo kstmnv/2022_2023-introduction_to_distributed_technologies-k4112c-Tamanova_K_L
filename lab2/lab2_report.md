@@ -22,7 +22,13 @@ Date of finished:
 
 Ход работы:
 
-1. Создание deployment и сервиса
-картинка
+1. Создание deployment и сервиса:
 
+С помощью команды kubectl apply -f lab2.yaml :
+
+![image](https://user-images.githubusercontent.com/107037214/208655545-cc5a2456-0600-4013-9115-e1aa222508d3.png)
+
+Проверка создания подов:
+
+![image](https://user-images.githubusercontent.com/107037214/208656365-83871ec2-2c1a-4403-b44c-168bc3371bb0.png)
 
