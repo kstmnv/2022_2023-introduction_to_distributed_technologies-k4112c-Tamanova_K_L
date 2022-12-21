@@ -22,26 +22,34 @@ Date of finished:
 
 Ход работы:
 
-1. Создание компонентов
+1. Namespace
 
-1.1 configMap - — это объект API, используемый для хранения неконфиденциальных данных в парах ключ-значение.
+Создадим namespace lab3ns
+
+![image](https://user-images.githubusercontent.com/107037214/208969730-5c32e145-dd0d-48d0-a3e2-9f3a6ff3fa41.png)
+
+1.1 Проверим создался ли namespace:
+
+![image](https://user-images.githubusercontent.com/107037214/208969509-a119d668-53ad-49af-b2e4-77ebe0c62f7d.png)
+
+1.2 configMap - — это объект API, используемый для хранения неконфиденциальных данных в парах ключ-значение.
 Использование ConfigMaps позволяет разделять конфигурационные файлы и контейнеры с приложениями.
 
 kubectl apply -f lab3-configmap.yaml
 
-![image](https://user-images.githubusercontent.com/107037214/208952404-46e538da-b364-4425-aa6e-657fec34d873.png)
+![image](https://user-images.githubusercontent.com/107037214/208969954-a460abc9-0078-4753-9f4c-92f7671416b3.png)
 
 1.2 replicaset — его цель, поддерживать стабильный набор подов реплик, работающих в любой момент времени. Таким образом, он часто используется, чтобы гарантировать доступность определенного количества идентичных подов.
 
 kubectl apply -f lab3-replicaset.yaml
 
-![image](https://user-images.githubusercontent.com/107037214/208953285-4bce39f6-706d-43f7-9127-f4d529491971.png)
+![image](https://user-images.githubusercontent.com/107037214/208970092-29a53cc2-2c7d-4193-bfae-fd47aacff2d6.png)
 
 1.3 service — в Kubernetes это абстракция, определяющая политику доступа к подам.
 
 kubectl apply -f lab3-service.yaml
 
-![image](https://user-images.githubusercontent.com/107037214/208953474-9fb28b79-7a1b-4454-bf0e-22a5d317814e.png)
+![image](https://user-images.githubusercontent.com/107037214/208970132-0c928d68-e0dd-4d03-8ec3-b8b513b30629.png)
 
 2. TLS сертификат
 
@@ -87,6 +95,7 @@ minikube addons enable ingress
 
 minikube addons enable ingress-dns
 
+![image](https://user-images.githubusercontent.com/107037214/208960794-6936599a-2175-4f55-9bd8-fd7af683a5a5.png)
 
 3.3 Добавляем IP адрес ingress и FQDN (127.0.0.1 kstamanovalab3.com) в дирикторию C:\Windows\System32\drivers\etc
 
