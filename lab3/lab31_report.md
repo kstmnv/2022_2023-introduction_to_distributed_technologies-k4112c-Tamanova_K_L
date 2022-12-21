@@ -44,13 +44,6 @@ Date of finished:
 
 ![image](https://user-images.githubusercontent.com/107037214/208976726-a62190d1-723a-40cc-8b7b-cb42aef9a738.png)
 
-После чего создаем файл сервиса и ингресса, вносим изменения в деплоймент и выполняем команду:
 
-![image](https://user-images.githubusercontent.com/107037214/208976934-5b44005f-3847-4a67-a0c6-8f5b7b34ca75.png)
-
-Вносим в hosts minikube ip и доменное имя, которое указано в ингрессе. Выполняем команду:
-
-![image](https://user-images.githubusercontent.com/107037214/208977095-4c0d2c4f-3068-4e10-a970-f2ad1ff188c9.png)
-
-Проверяем работоспособность нашего ингресса - вводим это доменное имя в браузер и видим, что все работает корректно - наш ингресс смог достучаться до сервиса, а сервис до пода:
+![image](https://user-images.githubusercontent.com/107037214/208984108-74207809-e0ce-48ba-90d1-f62ba876b307.png)
 
