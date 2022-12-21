@@ -59,6 +59,22 @@ kubectl apply -f lab3-service.yaml
 
 ![image](https://user-images.githubusercontent.com/107037214/208970132-0c928d68-e0dd-4d03-8ec3-b8b513b30629.png)
 
+Посмотрим список сервисов:
+
+![image](https://user-images.githubusercontent.com/107037214/208972978-08ccc5e0-4ef6-4b4f-80f9-1dbd548eea87.png)
+
+Устанавливаем ingress controller:
+
+![image](https://user-images.githubusercontent.com/107037214/208973992-ea297d56-f1a0-4f9a-a5da-b3a6caa3b6bf.png)
+
+Вносим в hosts minikube ip и доменное имя, которое указано в ингрессе. Выполняем команду:
+
+![image](https://user-images.githubusercontent.com/107037214/208974135-c1718a17-9e74-4776-9e35-c720275744b1.png)
+
+Проверяем работоспособность нашего ингресса - вводим это доменное имя в браузер и видим, что все работает корректно - наш ингресс смог достучаться до сервиса, а сервис до пода:
+
+
+
 2. TLS сертификат
 
 2.1 Генерируем TLS сертификат с помощью команды:
