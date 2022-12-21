@@ -22,13 +22,23 @@ Date of finished:
 
 Ход работы:
 
-1. Создаем деплоймент и конфигмап
+1. Создаем configmap:
 
-![image](https://user-images.githubusercontent.com/107037214/208976059-d3952c73-e873-4d06-b916-76e53fac77a3.png)
+![image](https://user-images.githubusercontent.com/107037214/208981612-01e4e6df-2f74-40dc-941b-9ece6ad6efd8.png)
+
+Проверяем создался ли:
+
+![image](https://user-images.githubusercontent.com/107037214/208982088-89817544-316f-4846-b321-ea549eb868ec.png)
+
+2. Создаем replicaset:
+
+![image](https://user-images.githubusercontent.com/107037214/208982248-6f18e049-8958-48b0-b722-13ac840b0acb.png)
+
+![image](https://user-images.githubusercontent.com/107037214/208982538-ab3f8ff9-0a6d-46d4-afca-f8503ec8650e.png)
 
 2. Включаем ingress
 
-![image](https://user-images.githubusercontent.com/107037214/208976595-d2e60e9b-4390-4c6b-a0da-f5930a536505.png)
+![image](https://user-images.githubusercontent.com/107037214/208982820-21a50037-5919-4ab3-94d7-db7268c1bbac.png)
 
 Устанавливаем ingress controller:
 
