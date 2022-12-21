@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lab4-configmap
+data:
+  username: "student"
+  company-name: "itmo"

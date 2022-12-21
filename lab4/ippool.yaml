@@ -1,0 +1,19 @@
+apiVersion: crd.projectcalico.org/v1
+kind: IPPool
+metadata:
+  name: zone-dybenko-ippool
+spec:
+  cidr: 10.244.102.1/24
+  ipipMode: Always
+  natOutgoing: true
+  nodeSelector: zone == "dybenko"
+---
+apiVersion: crd.projectcalico.org/v1
+kind: IPPool
+metadata:
+  name: zone-kupchino-ippool
+spec:
+  cidr: 10.244.102.2/24
+  ipipMode: Always
+  natOutgoing: true
+  nodeSelector: zone == "kupchino"
