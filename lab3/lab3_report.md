@@ -39,13 +39,21 @@ kubectl apply -f lab3-configmap.yaml
 
 ![image](https://user-images.githubusercontent.com/107037214/208969954-a460abc9-0078-4753-9f4c-92f7671416b3.png)
 
-1.2 replicaset — его цель, поддерживать стабильный набор подов реплик, работающих в любой момент времени. Таким образом, он часто используется, чтобы гарантировать доступность определенного количества идентичных подов.
+Проверим создался ли configmap:
+
+![image](https://user-images.githubusercontent.com/107037214/208972228-22ddf895-9a06-4f9a-aae0-2e4d67d972ce.png)
+
+1.3 replicaset — его цель, поддерживать стабильный набор подов реплик, работающих в любой момент времени. Таким образом, он часто используется, чтобы гарантировать доступность определенного количества идентичных подов.
 
 kubectl apply -f lab3-replicaset.yaml
 
 ![image](https://user-images.githubusercontent.com/107037214/208970092-29a53cc2-2c7d-4193-bfae-fd47aacff2d6.png)
 
-1.3 service — в Kubernetes это абстракция, определяющая политику доступа к подам.
+Посмотрим список запущенных подов:
+
+![image](https://user-images.githubusercontent.com/107037214/208972749-3808a208-8c06-45ed-877f-557920fca7dd.png)
+
+1.4 service — в Kubernetes это абстракция, определяющая политику доступа к подам.
 
 kubectl apply -f lab3-service.yaml
 
