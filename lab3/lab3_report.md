@@ -29,19 +29,27 @@ Date of finished:
 
 kubectl apply -f lab3-configmap.yaml
 
+![image](https://user-images.githubusercontent.com/107037214/208952404-46e538da-b364-4425-aa6e-657fec34d873.png)
+
 1.2 replicaset — его цель, поддерживать стабильный набор подов реплик, работающих в любой момент времени. Таким образом, он часто используется, чтобы гарантировать доступность определенного количества идентичных подов.
 
 kubectl apply -f lab3-replicaset.yaml
+
+![image](https://user-images.githubusercontent.com/107037214/208953285-4bce39f6-706d-43f7-9127-f4d529491971.png)
 
 1.3 service — в Kubernetes это абстракция, определяющая политику доступа к подам.
 
 kubectl apply -f lab3-service.yaml
 
+![image](https://user-images.githubusercontent.com/107037214/208953474-9fb28b79-7a1b-4454-bf0e-22a5d317814e.png)
+
 2. TLS сертификат
 
 2.1 Генерируем TLS сертификат с помощью команды:
 
-openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout tls.key -out tls.crt -subj "/CN=kudryashovalab3.com" -days 365
+openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout tls.key -out tls.crt -subj "/CN=kstamanovalab3.com" -days 365
+
+![image](https://user-images.githubusercontent.com/107037214/208959628-61a78802-bafa-4ce6-9901-872805df7a09.png)
 
 req — это генерация запросов на подпись сертификата, но если мы задаём ключ «-x509», это означает, что мы генерируем самоподписанный сертификат.
 
@@ -69,13 +77,18 @@ Ingress — это объект API, который определяет пра�
 
 kubectl apply -f lab3-ingress.yaml
 
+![image](https://user-images.githubusercontent.com/107037214/208959193-351adc2a-0b21-4e27-aff4-b33efb313aa1.png)
+
 3.2 Конфигурирем minikube для работы с ingress:
 
 minikube addons enable ingress
 
+![image](https://user-images.githubusercontent.com/107037214/208960644-0042338f-c9d3-48ce-a008-72d72752434b.png)
+
 minikube addons enable ingress-dns
 
-3.3 Добавляем IP адрес ingress и FQDN (127.0.0.1 kudryashovalab3.com) в дирикторию C:\Windows\System32\drivers\etc
+
+3.3 Добавляем IP адрес ingress и FQDN (127.0.0.1 kstamanovalab3.com) в дирикторию C:\Windows\System32\drivers\etc
 
 3.4 Для доступа к ingress используем команду:
 
