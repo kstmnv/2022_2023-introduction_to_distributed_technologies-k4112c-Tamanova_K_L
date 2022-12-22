@@ -28,14 +28,17 @@ minikube dashboard
 ```
 
 - Проверим ноды
+ 
 ![image](https://user-images.githubusercontent.com/107037214/208992865-17aa51bd-a02f-48f9-9549-4e92dc5249e2.png)
 
 - Проверим поды:
 
 ![image](https://user-images.githubusercontent.com/107037214/208992770-d8cb962e-ff4c-4acf-9734-7c47bbbb4848.png)
+
 ### 1. Сalicoctl
 
 -  Из документации добавим файл calicoctl.yaml
+
 ![image](https://user-images.githubusercontent.com/107037214/208992947-3d26f3e6-db74-4220-92da-bcae4996a137.png)
 
 
