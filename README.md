@@ -3,7 +3,7 @@
 
 Список лабораторных работ:
 
-[Лабораторная работа №1 "Установка Docker и Minikube, мой первый манифест."] (https://itmo-ict-faculty.github.io/introduction-to-distributed-technologies/education/labs2022_2023/lab1/lab1/)
+[Лабораторная работа №1 "Установка Docker и Minikube, мой первый манифест."](https://itmo-ict-faculty.github.io/introduction-to-distributed-technologies/education/labs2022_2023/lab1/lab1/)
 
 [Лабораторная работа №2 "Развертывание веб сервиса в Minikube, доступ к веб интерфейсу сервиса. Мониторинг сервиса."](https://itmo-ict-faculty.github.io/introduction-to-distributed-technologies/education/labs2022_2023/lab2/lab2/)
 
