@@ -131,11 +131,11 @@ minikube tunnel
 
 4. Результат
 
-картинка
+![image](https://user-images.githubusercontent.com/107037214/209480700-e69459dd-1437-46a9-871d-d6bef8a1ed8d.png)
 
 Проверка сертификата:
 
-картинка
+![image](https://user-images.githubusercontent.com/107037214/209481638-8be2bf4b-55bf-45f4-8546-fbd83f0d7d58.png)
 
 5. Схема организации сервисов и контейнеров:
 
