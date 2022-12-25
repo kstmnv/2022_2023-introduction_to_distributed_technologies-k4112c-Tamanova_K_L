@@ -45,7 +45,7 @@ Date of finished:
 
 1.3 replicaset — его цель, поддерживать стабильный набор подов реплик, работающих в любой момент времени. Таким образом, он часто используется, чтобы гарантировать доступность определенного количества идентичных подов.
 
-kubectl apply -f lab3-replicaset.yaml
+```kubectl apply -f lab3-replicaset.yaml```
 
 ![image](https://user-images.githubusercontent.com/107037214/208970092-29a53cc2-2c7d-4193-bfae-fd47aacff2d6.png)
 
@@ -55,7 +55,7 @@ kubectl apply -f lab3-replicaset.yaml
 
 1.4 service — в Kubernetes это абстракция, определяющая политику доступа к подам.
 
-kubectl apply -f lab3-service.yaml
+```kubectl apply -f lab3-service.yaml```
 
 ![image](https://user-images.githubusercontent.com/107037214/208970132-0c928d68-e0dd-4d03-8ec3-b8b513b30629.png)
 
@@ -75,7 +75,7 @@ kubectl apply -f lab3-service.yaml
 
 2.1 Генерируем TLS сертификат с помощью команды:
 
-openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout tls.key -out tls.crt -subj "/CN=kstamanovalab3.com" -days 365
+```openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout tls.key -out tls.crt -subj "/CN=kstamanovalab3.com" -days 365```
 
 ![image](https://user-images.githubusercontent.com/107037214/208959628-61a78802-bafa-4ce6-9901-872805df7a09.png)
 
@@ -95,7 +95,7 @@ req — это генерация запросов на подпись серт�
 
 2.2 Создание Secret с помощью команды:
 
-kubectl create secret tls lab3-tls --cert=tls.crt --key=tls.key
+```kubectl create secret tls lab3-tls --cert=tls.crt --key=tls.key```
 
 3. Создание ingress
 
@@ -103,17 +103,17 @@ Ingress — это объект API, который определяет пра�
 
 3.1 Используем команду
 
-kubectl apply -f lab3-ingress.yaml
+```kubectl apply -f lab3-ingress.yaml```
 
 ![image](https://user-images.githubusercontent.com/107037214/208959193-351adc2a-0b21-4e27-aff4-b33efb313aa1.png)
 
 3.2 Конфигурирем minikube для работы с ingress:
 
-minikube addons enable ingress
+```minikube addons enable ingress```
 
 ![image](https://user-images.githubusercontent.com/107037214/208960644-0042338f-c9d3-48ce-a008-72d72752434b.png)
 
-minikube addons enable ingress-dns
+```minikube addons enable ingress-dns```
 
 ![image](https://user-images.githubusercontent.com/107037214/208960794-6936599a-2175-4f55-9bd8-fd7af683a5a5.png)
 
@@ -121,7 +121,7 @@ minikube addons enable ingress-dns
 
 3.4 Для доступа к ingress используем команду:
 
-minikube tunnel
+```minikube tunnel```
 
 4. Результат
 
