@@ -131,7 +131,7 @@ minikube tunnel
 
 4. Результат
 
-![image](https://user-images.githubusercontent.com/107037214/209480700-e69459dd-1437-46a9-871d-d6bef8a1ed8d.png)
+![image](https://user-images.githubusercontent.com/107037214/209481893-266e329d-ecd0-46fb-b590-ad070583c998.png)
 
 Проверка сертификата:
 
@@ -139,4 +139,4 @@ minikube tunnel
 
 5. Схема организации сервисов и контейнеров:
 
-картинка
+![image](https://user-images.githubusercontent.com/107037214/209482013-b11b8052-7158-44f2-97dc-e509f2df227d.png)
