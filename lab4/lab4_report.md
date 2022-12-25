@@ -100,4 +100,4 @@ minikube dashboard
 
 - Схема организации контейнеров
 
-скрин
+![image](https://user-images.githubusercontent.com/107037214/209482965-4612f4ac-2d20-49ea-9201-e393d5cc1d20.png)
