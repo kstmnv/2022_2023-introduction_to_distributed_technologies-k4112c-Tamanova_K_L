@@ -14,13 +14,14 @@ Lab: Lab1
 
 Date of create: 11.12.2022
 
-Date of finished: 
+Date of finished: 22.12.22
 
-Цель рабоы:
+### Цель рабоы:
 
 Познакомиться с инструментами Minikube и Docker, развернуть свой первый "под".
 
-Ход работы:
+### Ход работы:
+
 1. Манифест для развертывания пода:
 
 ![image](https://user-images.githubusercontent.com/107037214/208406056-c6e3abf0-9fd0-44cd-851f-1c0c4d7784ff.png)
