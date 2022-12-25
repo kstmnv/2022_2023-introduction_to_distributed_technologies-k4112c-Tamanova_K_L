@@ -35,7 +35,7 @@ Date of finished:
 1.2 configMap - — это объект API, используемый для хранения неконфиденциальных данных в парах ключ-значение.
 Использование ConfigMaps позволяет разделять конфигурационные файлы и контейнеры с приложениями.
 
-kubectl apply -f lab3-configmap.yaml
+```kubectl apply -f lab3-configmap.yaml```
 
 ![image](https://user-images.githubusercontent.com/107037214/208969954-a460abc9-0078-4753-9f4c-92f7671416b3.png)
 
