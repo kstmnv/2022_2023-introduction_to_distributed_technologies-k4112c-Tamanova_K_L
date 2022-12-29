@@ -28,7 +28,7 @@ Date of finished:
 
 - При помощи команды `kubectl get po -n kube-system -l=k8s-app=calico-node` видим созданные поды с меткой calico-node
 - 
-скрин
+![image](https://user-images.githubusercontent.com/107037214/209953820-6d1825f9-87cf-4829-803e-4a6df2acc119.png)
  
 - Для проверки работы Calico мы попробуем одну из функций под названием `IPAM Plugin`
 
@@ -36,23 +36,23 @@ Date of finished:
  
  Соглавно инструкции по назначению ip-адресов удаляем дефолтный ippool, убеждаемся что никаких айпи-пулов не осталось:
  
-скрин
+![image](https://user-images.githubusercontent.com/107037214/209961106-9eddb260-bb8f-46a9-8e8b-fbc9f9b1e5a2.png)
 
 - Для ранее запущенных нод добавляем labels:
 
-скрин
+![image](https://user-images.githubusercontent.com/107037214/209959201-12528243-bbde-4fbd-a0e4-c07a9c28365c.png)
 
 - Создаём IP pool для каждого rack
 
-скрин
-
 - Чтобы взаимодействовать с calico, скачиваем его yaml образ с офф.сайта и деплоим в миникуб
 
-скрин
+![image](https://user-images.githubusercontent.com/107037214/209959885-0091fb3f-7fad-4353-bf76-f1a15d4e9d46.png)
 
 - Далее, взаимодействуя с calico через неймспейс kube-system, разворачиваем ip pools
 
-скрин
+``` kubectl exec -i -n kube-system calicoctl -- /calicoctl get ippools -o wide```
+
+![image](https://user-images.githubusercontent.com/107037214/209960573-35a185bb-058d-4091-adc5-912d72c43657.png)
 
 # Проверка назначения IP адресов
 
@@ -60,13 +60,14 @@ Date of finished:
 
 - Создаём деплой, и сервис, при помощи команды `kubectl get po -o wide` проверяем поды
 
-скрин
+![image](https://user-images.githubusercontent.com/107037214/209961312-68d9596e-57e9-4b63-8954-2721045f9425.png)
 
 Видим проблему, образ не ложится на контейнеры, и эта проблема не решается пуллом образа в докер, до того как задеплоить манифест с calico они были в состоянии `ready`.
 
 - Чтобы понять, в чём ошибка, делаем `kubectl describe pod lab4-7cc54fb749-krdf6`
 
-скрин
+![image](https://user-images.githubusercontent.com/107037214/209961403-42abff08-4649-4b81-9333-0bddfe14515a.png)
+
 
 Из описания становится понятно, что сервис kubelet по какой-то причине отказывается надевать на контейнер наш образ.
 
