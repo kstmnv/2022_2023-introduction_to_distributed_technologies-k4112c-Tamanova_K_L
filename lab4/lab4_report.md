@@ -36,7 +36,7 @@ Date of finished:
  
  Соглавно инструкции по назначению ip-адресов удаляем дефолтный ippool, убеждаемся что никаких айпи-пулов не осталось:
  
-![image](https://user-images.githubusercontent.com/107037214/209961106-9eddb260-bb8f-46a9-8e8b-fbc9f9b1e5a2.png)
+![image](https://user-images.githubusercontent.com/107037214/209961700-09ad34ee-a79c-4bbc-80e0-66f5bd78659c.png)
 
 - Для ранее запущенных нод добавляем labels:
 
