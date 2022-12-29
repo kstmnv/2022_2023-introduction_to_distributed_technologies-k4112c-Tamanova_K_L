@@ -14,34 +14,6 @@ Date of finished:
 
 Познакомиться с CNI Calico и функцией `IPAM Plugin`, изучить особенности работы CNI и CoreDNS.
 
-
-
-- Разворачиваем minikube cluster
-
-```bash
-minikube start --nodes 2 --cni calico --kubernetes-version=v1.25.2
-```
-
-- Запустим dashboard командой:
-```bash
-minikube dashboard
-```
-
-- Проверим ноды
- 
-![image](https://user-images.githubusercontent.com/107037214/208992865-17aa51bd-a02f-48f9-9549-4e92dc5249e2.png)
-
-- Проверим поды:
-
-![image](https://user-images.githubusercontent.com/107037214/208992770-d8cb962e-ff4c-4acf-9734-7c47bbbb4848.png)
-
-### 1. Сalicoctl
-
--  Из документации добавим файл calicoctl.yaml
-
-![image](https://user-images.githubusercontent.com/107037214/208992947-3d26f3e6-db74-4220-92da-bcae4996a137.png)
-
- 
 ## Ход работы
 1. Устанавливаем плагин Calico.
 - Прежде чем запустить minikube, устанавливаем плагин `CNI=Calico`, команда `minikube start --network-plugin=cni --cni=calico` позволяет создать single-node minikube cluster, нам же нужно 2 ноды. Чтобы их создать, потребуется команда `minikube start --nodes 2 -p multinode-demo`. Теперь объединяем их в одно
@@ -50,7 +22,7 @@ minikube dashboard
 
 - Проверяем количество созданных нод при помощи команды `kubectl get nodes`:
 
-скрин
+![image](https://user-images.githubusercontent.com/107037214/209953679-a966fc93-0947-430f-97c1-dc5633a48564.png)
 
 - Проверяем работу CNI плагина Calico:
 
