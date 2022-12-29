@@ -27,7 +27,7 @@ Date of finished:
 - Проверяем работу CNI плагина Calico:
 
 - При помощи команды `kubectl get po -n kube-system -l=k8s-app=calico-node` видим созданные поды с меткой calico-node
-- 
+
 ![image](https://user-images.githubusercontent.com/107037214/209953820-6d1825f9-87cf-4829-803e-4a6df2acc119.png)
  
 - Для проверки работы Calico мы попробуем одну из функций под названием `IPAM Plugin`
