@@ -6,7 +6,7 @@ Group: K4112c
 Author: Tamanova KL
 Lab: Lab4
 Date of create: 21.12.2022  
-Date of finished: 
+Date of finished: 29.12.2022
 
 ---
 
